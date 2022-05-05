@@ -22,8 +22,8 @@ hexo.on('exit', function () {
   const { enable, suffix, ignoreSuffix, ignoreDir } = hash
 
   // 判断当前执行的命令是否是构建命令，并且查看是否存在public_dir
-  const condition = ['g', 'generate'].includes(env.cmd) || !existsSync(public_dir)
-  if (!enable || !condition) return
+  const condition = ['g', 'generate'].includes(env.cmd) 
+  if (!condition || !existsSync(public_dir) || !enable) return
 
   const files = readAllFile(public_dir, { suffix, ignoreSuffix, ignoreDir })
   const mappingObj = mapping(files, public_dir, urlFor)
