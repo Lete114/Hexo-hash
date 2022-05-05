@@ -1,0 +1,28 @@
+{
+  "name": "hexo-hash",
+  "version": "1.0.0-beta.0",
+  "description": "为静态资源创建哈希版本 | Create hash versions for static resources",
+  "main": "index.js",
+  "author": "Lete乐特",
+  "license": "MIT",
+  "keywords": [
+    "hash",
+    "rev",
+    "revving",
+    "cache",
+    "file",
+    "files",
+    "caching",
+    "version",
+    "expire",
+    "assets"
+  ],
+  "homepage": "https://github.com/Lete114/Hexo-Hash#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lete114/Hexo-Hash.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Lete114/Hexo-Hash/issues"
+  }
+}
