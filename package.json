@@ -1,6 +1,6 @@
 {
   "name": "hexo-hash",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0-beta.4",
   "description": "为静态资源创建哈希版本 | Create hash versions for static resources",
   "main": "index.js",
   "author": "Lete乐特",
