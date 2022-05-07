@@ -21,7 +21,7 @@ const defualtOptions = {
   relative: false,
   injectSuffix: ['.html', '.css', '.js'],
   suffix: false,
-  ignoreSuffix: false,
+  ignoreSuffix: ['.html'],
   ignoreDir: false
 }
 
