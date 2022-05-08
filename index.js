@@ -7,7 +7,6 @@
 'use strict'
 
 const { existsSync } = require('fs')
-const { cyan } = require('picocolors')
 const prettyHrtime = require('pretty-hrtime')
 const { injectHash, mapping, readAllFile } = require('./lib')
 
@@ -55,5 +54,6 @@ hexo.on('exit', function () {
   injectHash(injectFiles, mappingObj, version, relative)
 
   const interval = prettyHrtime(process.hrtime(start))
-  log.i('Successfully injected hash version in %s', cyan(interval))
+  const cyan = '\x1b[36m' + interval + '\x1b[39m'
+  log.i('Successfully injected hash version in %s', cyan)
 })
