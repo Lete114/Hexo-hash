@@ -14,6 +14,8 @@ npm install hexo-hash --save
 
 ## 添加配置信息
 
+> 注意只对html文件进入的资源进行处理，其它文件如css文件中使用的`background: url()`引入的不做hash处理
+
 > 这些功能只有你需要自定义的时候才会用到
 > 如果不写配置，则使用默认的配置(会对所有资源生成 hash)
 
@@ -25,10 +27,5 @@ npm install hexo-hash --save
 hash:
   enable: true                              # 是否启用
   size: 10                                  # 生成的hash长度，最大32
-  version: v                                # 自定义版本号key，如: ?v=6faed3522c
-  relative: false                           # 是否为相对路径的资源注入hash版本
-  injectSuffix: ['.html', '.css', '.js']    # 指定为哪些文件注入hash版本
-  suffix: []                                # 指定生成hash的文件后缀
-  ignoreSuffix: ['.html']                   # 指定忽略生成hash的文件后缀
-  ignoreDir: []                             # 忽略指定目录
+  versionKey: v                             # 自定义版本号key，如: ?v=6faed3522c
 ```
