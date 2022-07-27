@@ -28,4 +28,5 @@ hash:
   enable: true                              # 是否启用
   size: 10                                  # 生成的hash长度，最大32
   versionKey: v                             # 自定义版本号key，如: ?v=6faed3522c
+  # lazy: data-src                          # 如果你的博客使用了图片来加载可以自定义源图片的img属性
 ```

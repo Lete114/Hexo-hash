@@ -1,6 +1,6 @@
 {
   "name": "hexo-hash",
-  "version": "1.0.0-beta.10",
+  "version": "1.0.0-beta.11",
   "description": "为静态资源创建哈希版本 | Create hash versions for static resources",
   "main": "index.js",
   "author": "Lete乐特",
@@ -24,5 +24,8 @@
   },
   "bugs": {
     "url": "https://github.com/Lete114/Hexo-Hash/issues"
+  },
+  "dependencies": {
+    "jsdom": "^20.0.0"
   }
 }
