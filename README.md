@@ -29,6 +29,7 @@ hash:
   size: 10                                  # 生成的hash长度，最大32
   versionKey: v                             # 自定义版本号key，如: ?v=6faed3522c
   lazy: src                                 # 如果你的博客使用了图片来加载可以自定义源图片的img属性，如 data-src 或 lazy-src 等
+  relative: false                           # 是否处理相对路径的资源(存在误注入的可能)
   html: true                                # 是否启动对 html 文件的 script | link | img 标签的引用进行 hash 注入(稳定)
   queryString:                              # 使用查询字符串的方式匹配(不稳定，存在误注入的可能)
     js: true                                # 匹配 js 文件内符合条件的内容进行 hash 注入

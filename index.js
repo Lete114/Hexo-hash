@@ -22,6 +22,7 @@ const defualtOptions = {
   size: 10,
   versionKey: 'v',
   lazy: 'src',
+  relative: false,
   html: true,
   queryString: {
     js: true,
@@ -48,8 +49,8 @@ hexo.on('exit', function () {
   if (!condition || !existsSync(public_dir) || !options.enable) return
   // 读取生成hash版本的文件
   const files = readAllFile(public_dir)
-  const mappings = mapping(files, public_dir, urlFor, options.size)
-  // console.log('mappings',mappings)
+  const mappings = mapping(files, public_dir, urlFor, options.size,options.relative)
+
   const params = { options, root, urlFor, files, mappings, caches, public_dir }
   handlerJs(params)
   handlerCss(params)
